@@ -1,7 +1,7 @@
 import meter1 from "../Assets/img/meter1.svg";
 import meter2 from "../Assets/img/meter2.svg";
 import meter3 from "../Assets/img/meter3.svg";
-import colorSharp from "../Assets/img/color-sharp.png"
+// import colorSharp from "../Assets/img/DaftPunkBanner.jpg"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -57,7 +57,7 @@ export const Skills = () =>{
                     </div>
                 </div>
             </div>
-            <img className="background-image-left" src={colorSharp} alt="Image" />
+            {/* <img className="background-image-left" src={colorSharp} alt="Image" /> */}
         </section>
       )
 }
