@@ -436,6 +436,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
+
+.no-blue {
+  color: inherit; 
+} 
+
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
