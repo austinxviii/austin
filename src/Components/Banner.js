@@ -47,10 +47,8 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hey, I'm Austin`} <br></br> <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Data Scientist", "ML Engineer", "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <h1 className="tinos-bold">{`Imagination carry us to worlds that never were`}</h1>
+                <p className="tinos-regular">Sup? I'm Austin, a cs undergrad fueled by boundless curiosity. I like to tinker with AI, Machine Learning and Algorithms. At my core, I'm a techno-optimist who believes in the transformative potential of accelerating technological progress to reshape our world for the better. I also like to listen to hip-hop & play football.</p>
           </Col>
           {/* <Col xs={12} md={6} xl={5}>
                 <img src={headerImg} alt="Header Img"/>

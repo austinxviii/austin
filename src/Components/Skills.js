@@ -1,6 +1,8 @@
-import meter1 from "../Assets/img/meter1.svg";
-import meter2 from "../Assets/img/meter2.svg";
-import meter3 from "../Assets/img/meter3.svg";
+import meter1 from "../Assets/img/retro/concorde-and-eclipse.jpg";
+import meter2 from "../Assets/img/retro/helixNebula.jpg";
+import meter3 from "../Assets/img/retro/robo.jpg";
+import meter4 from "../Assets/img/retro/connect-2.jpg";
+import meter5 from "../Assets/img/retro/hubble.jpg";
 // import colorSharp from "../Assets/img/DaftPunkBanner.jpg"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -33,25 +35,39 @@ export const Skills = () =>{
                 <div className="row">
                     <div className="col-12">
                         <div className="skill-bx wow zoomIn">
-                            <h2>Skills</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <h2 className="tinos-bold">BLOGS</h2>
+                            <p className="tinos-regular">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                            <a href="#" className='no-blue' target="_blank">
                                 <div className="item">
                                     <img src={meter1} alt="Image" />
-                                    <h5>Web Development</h5>
+                                    <h5 className="tinos-regular">Blog 1</h5>
                                 </div>
+                            </a>
+                            <a href="#" className='no-blue' target="_blank">
                                 <div className="item">
                                     <img src={meter2} alt="Image" />
-                                    <h5>Brand Identity</h5>
+                                    <h5 className="tinos-regular">Blog 2</h5>
                                 </div>
+                            </a>
+                            <a href="#" className='no-blue' target="_blank">
                                 <div className="item">
                                     <img src={meter3} alt="Image" />
-                                    <h5>Logo Design</h5>
+                                    <h5 className="tinos-regular">Blog 3</h5>
                                 </div>
+                            </a>
+                            <a href="#" className='no-blue' target="_blank">
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
-                                    <h5>Web Development</h5>
+                                    <img src={meter4} alt="Image" />
+                                    <h5 className="tinos-regular">Blog 4</h5>
                                 </div>
+                            </a>
+                            <a href="#" className='no-blue' target="_blank">
+                                <div className="item">
+                                    <img src={meter5} alt="Image" />
+                                    <h5 className="tinos-regular">Blog 5</h5>
+                                </div>
+                            </a>
                             </Carousel>
                         </div>
                     </div>
