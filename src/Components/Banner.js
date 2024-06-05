@@ -46,13 +46,10 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="align-items-center">
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={12} md={6} xl={7} className="spread">
                 <h1 className="tinos-bold">{`Imagination carry us to worlds that never were`}</h1>
                 <p className="tinos-regular">Sup? I'm Austin, a cs undergrad fueled by boundless curiosity. I like to tinker with AI, Machine Learning and Algorithms. At my core, I'm a techno-optimist who believes in the transformative potential of accelerating technological progress to reshape our world for the better. I also like to listen to hip-hop & play football.</p>
           </Col>
-          {/* <Col xs={12} md={6} xl={5}>
-                <img src={headerImg} alt="Header Img"/>
-          </Col> */}
         </Row>
       </Container>
     </section>

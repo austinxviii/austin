@@ -7,17 +7,16 @@ import projImg3 from "../Assets/img/retro/spaceship3.jpg";
 import projImg4 from "../Assets/img/retro/saturnRings.png";
 import projImg5 from "../Assets/img/retro/teslaInSpace.jpeg";
 import projImg6 from "../Assets/img/retro/carinaNebula.png";
-// import projImg7 from "../Assets/img/retro";
-// import projImg8 from "../Assets/img/retro";
-// import projImg9 from "../Assets/img/retro";
-// import projImg10 from "../Assets/img/retro";
-// import projImg11 from "../Assets/img/retro";
-// import projImg12 from "../Assets/img/retro";
+import projImg7 from "../Assets/img/retro/a$ap.jpg";
+import projImg8 from "../Assets/img/retro/messi2.jpg";
+import projImg9 from "../Assets/img/retro/design-bubble.jpg";
+import projImg10 from "../Assets/img/retro/bb1.jpg";
+import projImg11 from "../Assets/img/retro/books.jpg";
 
 
 export const Projects = () =>{
 
-    const projects = [
+    const projects1 = [
         {
             title: "Music Streaming App",
             description: "Web Development",
@@ -52,6 +51,38 @@ export const Projects = () =>{
             imgUrl: projImg6,
         },
     ];
+    const projects3 = [
+        {
+            title: "Music/HipHop",
+            description: "",
+            imgUrl: projImg7,
+            projectUrl: "#"
+        },
+        {
+            title: "Football",
+            description: "",
+            imgUrl: projImg8,
+            projectUrl: "#"
+        },
+        {
+            title: "Art & Photography",
+            description: "",
+            imgUrl: projImg9,
+            projectUrl: "#"
+        },
+        {
+            title: "Movies & Series",
+            description: "",
+            imgUrl: projImg10,
+            projectUrl: "#"
+        },
+        {
+            title: "Books",
+            description: "",
+            imgUrl: projImg11,
+            projectUrl: "#"
+        },
+    ];
 
     return (
         <section className="project" id="projects">
@@ -74,7 +105,7 @@ export const Projects = () =>{
                         <Tab.Pane eventKey="first">
                             <Row>
                             {
-                                projects.map((project, index) => {
+                                projects1.map((project, index) => {
                                 return (
                                     <ProjectCard
                                     key={index}
@@ -86,10 +117,21 @@ export const Projects = () =>{
                             </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                            <p>Coming soon....</p>
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                            <Row className="justify-content-center">
+                            {
+                                projects3.map((project, index) => {
+                                return (
+                                    <ProjectCard
+                                    key={index}
+                                    {...project}
+                                    />
+                                )
+                                })
+                            }
+                            </Row>
                         </Tab.Pane>
                     </Tab.Content>
                 </Tab.Container>

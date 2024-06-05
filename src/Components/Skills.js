@@ -36,7 +36,7 @@ export const Skills = () =>{
                     <div className="col-12">
                         <div className="skill-bx wow zoomIn">
                             <h2 className="tinos-bold">BLOGS</h2>
-                            <p className="tinos-regular">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p className="tinos-regular">Delve into a world of ideas, perspectives, and stories through my curated collection of engaging blog posts.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <a href="#" className='no-blue' target="_blank">
                                 <div className="item">
@@ -73,7 +73,6 @@ export const Skills = () =>{
                     </div>
                 </div>
             </div>
-            {/* <img className="background-image-left" src={colorSharp} alt="Image" /> */}
         </section>
       )
 }
