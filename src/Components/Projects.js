@@ -18,7 +18,7 @@ export const Projects = () =>{
 
     const projects1 = [
         {
-            title: "Music Streaming App",
+            title: "StreamIt",
             description: "Web Development",
             imgUrl: projImg1,
             projectUrl: "https://glorious-nasturtium-6dc.notion.site/MUSIC-STREAMING-APP-64533ede888b4061b56bab47f78df4cb?pvs=4"
@@ -36,18 +36,18 @@ export const Projects = () =>{
             projectUrl: "https://glorious-nasturtium-6dc.notion.site/SEMANTIC-SEGMENTATION-OF-SATELLITE-IMAGES-d459f0fa5de54d39bc27913a2b1780dc?pvs=4"
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Coming soon",
+            description: "....",
             imgUrl: projImg4,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Coming soon",
+            description: "....",
             imgUrl: projImg5,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Coming soon",
+            description: "....",
             imgUrl: projImg6,
         },
     ];
