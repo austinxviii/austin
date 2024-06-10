@@ -98,7 +98,7 @@ p.danger {
 
 /************ Navbar Css ************/
 nav.navbar {
-  padding: 18px 7px 0px 0px ;
+  padding: 18px 7px 0px 7px ;
   position: fixed;
   width: 100%;
   top: 0;
@@ -115,7 +115,7 @@ nav.navbar a.navbar-brand {
 
 @media screen and (max-width: 900px) {
   nav.navbar a.navbar-brand {
-    width: 15%;
+    width: 20%;
   }
 }
 
@@ -127,6 +127,19 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-size: 18px;
   opacity: 0.75;
 }
+
+@media screen and (max-width: 1100px) {
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    font-weight: 400;
+    color: #fff !important;
+    letter-spacing: 0.8px;
+    padding: 0 25px;
+    height: 33px;
+    font-size: 18px;
+    opacity: 0.75;
+  }
+}
+
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
@@ -268,7 +281,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @media screen and (max-width: 900px) {
   .banner {
     margin-top: 0;
-    padding: 0 0 200px 0;
+    padding: 30px 0 200px 0;
     background: url('./Assets/img/retro/trippyStars.jpg');
     background-position: top center;
     background-size: cover;
@@ -298,7 +311,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   .banner p {
     width: 100%;
-    font-size: 18px !important;
+    font-size: 17px !important;
     color: #B8B8B8;
     font-size: 18px;
     letter-spacing: 0.8px;
@@ -308,6 +321,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner h1 {
+  color: #FFFDD0;
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -316,8 +330,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
-  font-size: 20px;
+  color: #fff;
+  font-size: 19px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
@@ -669,7 +683,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
-  border-radius: 0;
+  border-radius: 20px;
   position: relative;
   transition: 0.3s ease-in-out;
 }
@@ -690,6 +704,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0;
   z-index: 0;
   transition: 0.3s ease-in-out;
+  border-radius: 20px;
 }
 .contact form button:hover::before {
   width: 100%;
@@ -725,10 +740,40 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: -122px;
 }
 .newsletter-bx h3 {
+  margin-top: 20px;
   font-weight: 700;
   letter-spacing: 0.5px;
   line-height: 1.2em;
 }
+
+@media screen and (max-width: 1100px) {
+  .newsletter-bx {
+    background: #FFFFFF;
+    border-radius: 55px;
+    color: #121212;
+    padding: 40px 25px 40px 25px;
+    margin-bottom: 80px;
+    margin-top: -105px;
+  }
+  .newsletter-bx h3 {
+    font-weight: 700;
+    font-size: 21px;
+    letter-spacing: 0.5px;
+    line-height: 1.2em;
+  }
+  .new-email-bx button {
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    width: 170px;
+    align-items: center;
+    padding: 20px 10px 25px 10px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 18px;
+  }
+}
+
+
 .new-email-bx {
   background: #fff;
   padding: 5px;
@@ -779,6 +824,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer img {
   width: 26%;
 }
+.img-austinxviii{
+  margin-bottom: 30px;
+}
+
 .footer p {
   font-weight: 400;
   font-size: 14px;
