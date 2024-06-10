@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/austin/static/css/main.c54d784b.css",
-    "main.js": "/austin/static/js/main.446dbc5f.js",
+    "main.css": "/austin/static/css/main.2fb39efa.css",
+    "main.js": "/austin/static/js/main.5091f918.js",
     "static/js/453.ace21015.chunk.js": "/austin/static/js/453.ace21015.chunk.js",
     "static/media/carinaNebula.png": "/austin/static/media/carinaNebula.8a836818b58a5ab0aa6a.png",
     "static/media/marsAstronaut.jpg": "/austin/static/media/marsAstronaut.c0c28245176ceff4ae2e.jpg",
@@ -37,12 +37,12 @@
     "index.html": "/austin/index.html",
     "static/media/nav-icon1.svg": "/austin/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/austin/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.c54d784b.css.map": "/austin/static/css/main.c54d784b.css.map",
-    "main.446dbc5f.js.map": "/austin/static/js/main.446dbc5f.js.map",
+    "main.2fb39efa.css.map": "/austin/static/css/main.2fb39efa.css.map",
+    "main.5091f918.js.map": "/austin/static/js/main.5091f918.js.map",
     "453.ace21015.chunk.js.map": "/austin/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c54d784b.css",
-    "static/js/main.446dbc5f.js"
+    "static/css/main.2fb39efa.css",
+    "static/js/main.5091f918.js"
   ]
 }
