@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/austin/static/css/main.2fb39efa.css",
-    "main.js": "/austin/static/js/main.5091f918.js",
+    "main.css": "/austin/static/css/main.e51c6c07.css",
+    "main.js": "/austin/static/js/main.47c50b1a.js",
     "static/js/453.ace21015.chunk.js": "/austin/static/js/453.ace21015.chunk.js",
     "static/media/carinaNebula.png": "/austin/static/media/carinaNebula.8a836818b58a5ab0aa6a.png",
     "static/media/marsAstronaut.jpg": "/austin/static/media/marsAstronaut.c0c28245176ceff4ae2e.jpg",
@@ -10,7 +10,7 @@
     "static/media/trippyStars.jpg": "/austin/static/media/trippyStars.a021df49cd176e3bd631.jpg",
     "static/media/books.jpg": "/austin/static/media/books.e3ac030cb9161583c0ff.jpg",
     "static/media/spaceship3.jpg": "/austin/static/media/spaceship3.2bcc62cda23517779511.jpg",
-    "static/media/download (3).jpg": "/austin/static/media/download (3).06a308492385adda640d.jpg",
+    "static/media/download (3).jpg": "/austin/static/media/download (3).6e82e4199063596ddaf1.jpg",
     "static/media/design-bubble.jpg": "/austin/static/media/design-bubble.1944af53e3a7d3e8a2a8.jpg",
     "static/media/header-img.svg": "/austin/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
     "static/media/messi2.jpg": "/austin/static/media/messi2.5afe8227e029ef706a39.jpg",
@@ -25,7 +25,6 @@
     "static/media/bb1.jpg": "/austin/static/media/bb1.72a1da75550328f23e77.jpg",
     "static/media/paleBlueDotHD.jpg": "/austin/static/media/paleBlueDotHD.99d0335b0430d9b90887.jpg",
     "static/media/robo.jpg": "/austin/static/media/robo.04336ab0e48638a8c502.jpg",
-    "static/media/contact-img.svg": "/austin/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
     "static/media/Challenger.jpg": "/austin/static/media/Challenger.e3ccff5d832fe84e28c8.jpg",
     "static/media/connect-2.jpg": "/austin/static/media/connect-2.c50fde9c3af787a90349.jpg",
     "static/media/austinxviii-logo-white.png": "/austin/static/media/austinxviii-logo-white.119ec52c60c88c86649b.png",
@@ -37,12 +36,12 @@
     "index.html": "/austin/index.html",
     "static/media/nav-icon1.svg": "/austin/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/austin/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.2fb39efa.css.map": "/austin/static/css/main.2fb39efa.css.map",
-    "main.5091f918.js.map": "/austin/static/js/main.5091f918.js.map",
+    "main.e51c6c07.css.map": "/austin/static/css/main.e51c6c07.css.map",
+    "main.47c50b1a.js.map": "/austin/static/js/main.47c50b1a.js.map",
     "453.ace21015.chunk.js.map": "/austin/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2fb39efa.css",
-    "static/js/main.5091f918.js"
+    "static/css/main.e51c6c07.css",
+    "static/js/main.47c50b1a.js"
   ]
 }
