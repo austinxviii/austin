@@ -648,66 +648,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact h2 {
 	font-size: 45px;
 	font-weight: 700;
-  margin-bottom: 30px;
-}
-.contact form input, .contact form textarea {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  color: #fff;
-  margin: 0 0 8px 0;
-  padding: 18px 26px;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  transition: 0.3s ease-in-out;
-}
-.contact form input:focus, .contact form textarea:focus {
-  background: rgba(255, 255, 255, 1);
-  color: #121212;
-}
-.contact form input::placeholder, .contact form textarea::placeholder {
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
-}
-.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
-  color: #121212;
-  opacity: 0.8;
-}
-.contact form button {
-  font-weight: 700;
-  color: #000;
-  background-color: #fff;
-  padding: 14px 48px;
-  font-size: 18px;
-  margin-top: 25px;
-  border-radius: 20px;
-  position: relative;
-  transition: 0.3s ease-in-out;
-}
-.contact form button span {
-  z-index: 1;
-  position: relative;
-}
-.contact form button:hover {
-  color: #fff;
-}
-.contact form button::before {
-  content: "";
-  background: #121212;
-  width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  transition: 0.3s ease-in-out;
-  border-radius: 20px;
-}
-.contact form button:hover::before {
-  width: 100%;
+  margin-bottom: 450px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -720,7 +661,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-
+@media screen and (max-width: 600px) {
+  .contact h2 {
+    margin-top: -25px;
+    color: #080808;
+  }
+}
 
 
 /************ Footer Css ************/
@@ -735,9 +681,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: #FFFFFF;
   border-radius: 55px;
   color: #121212;
-  padding: 85px 125px;
+  padding: 45px 125px;
   margin-bottom: 80px;
-  margin-top: -122px;
+  margin-top: -80px;
 }
 .newsletter-bx h3 {
   margin-top: 20px;
@@ -749,11 +695,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @media screen and (max-width: 1100px) {
   .newsletter-bx {
     background: #FFFFFF;
-    border-radius: 55px;
+    border-radius: 25px;
     color: #121212;
-    padding: 40px 25px 40px 25px;
+    padding: 5px 25px 20px 25px;
     margin-bottom: 80px;
-    margin-top: -105px;
+    margin-top: -80px;
   }
   .newsletter-bx h3 {
     font-weight: 700;
@@ -770,6 +716,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-weight: 500;
     letter-spacing: 0.5px;
     border-radius: 18px;
+  }
+  .new-email-bx {
+    padding: 1px;
   }
 }
 
@@ -825,7 +774,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 26%;
 }
 .img-austinxviii{
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .footer p {
@@ -833,7 +782,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 14px;
   color: #B8B8B8;
   letter-spacing: 0.5px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 
