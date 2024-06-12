@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/austin/static/css/main.e51c6c07.css",
-    "main.js": "/austin/static/js/main.47c50b1a.js",
+    "main.css": "/austin/static/css/main.c6c6a840.css",
+    "main.js": "/austin/static/js/main.1fa0e62c.js",
     "static/js/453.ace21015.chunk.js": "/austin/static/js/453.ace21015.chunk.js",
     "static/media/carinaNebula.png": "/austin/static/media/carinaNebula.8a836818b58a5ab0aa6a.png",
     "static/media/marsAstronaut.jpg": "/austin/static/media/marsAstronaut.c0c28245176ceff4ae2e.jpg",
@@ -19,9 +19,9 @@
     "static/media/helixNebula.jpg": "/austin/static/media/helixNebula.b1da9ae5097021776efd.jpg",
     "static/media/hubble.jpg": "/austin/static/media/hubble.a9e565ad7e001c3b1df3.jpg",
     "static/media/teslaInSpace.jpeg": "/austin/static/media/teslaInSpace.cfbacc929333634d7c6a.jpeg",
+    "static/media/sr17.jpg": "/austin/static/media/sr17.915ebc8d49c87dd49b01.jpg",
     "static/media/concorde-and-eclipse.jpg": "/austin/static/media/concorde-and-eclipse.ce0a0342558b222b1d0c.jpg",
     "static/media/backrooms.jpg": "/austin/static/media/backrooms.4cdbfa2731114ebffba7.jpg",
-    "static/media/rainbow_jet.jpg": "/austin/static/media/rainbow_jet.30ace0a825cc88c83095.jpg",
     "static/media/bb1.jpg": "/austin/static/media/bb1.72a1da75550328f23e77.jpg",
     "static/media/paleBlueDotHD.jpg": "/austin/static/media/paleBlueDotHD.99d0335b0430d9b90887.jpg",
     "static/media/robo.jpg": "/austin/static/media/robo.04336ab0e48638a8c502.jpg",
@@ -32,16 +32,20 @@
     "static/media/revicons.ttf": "/austin/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/austin/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/logo.svg": "/austin/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/nav-icon3.svg": "/austin/static/media/nav-icon3.08b285abb8e118b52637efa5d65c5367.svg",
+    "static/media/nav-icon8.svg": "/austin/static/media/nav-icon8.b9095f2ade25feb5da68bbd575337738.svg",
+    "static/media/nav-icon6.svg": "/austin/static/media/nav-icon6.20049688beb8124f72feeed3ea539cab.svg",
+    "static/media/nav-icon9.svg": "/austin/static/media/nav-icon9.bc60054e388597507be44f2e5bd55332.svg",
+    "static/media/nav-icon4.svg": "/austin/static/media/nav-icon4.8e9654599eaaf9389f55d03e52004bca.svg",
     "index.html": "/austin/index.html",
-    "static/media/nav-icon1.svg": "/austin/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
-    "static/media/nav-icon2.svg": "/austin/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.e51c6c07.css.map": "/austin/static/css/main.e51c6c07.css.map",
-    "main.47c50b1a.js.map": "/austin/static/js/main.47c50b1a.js.map",
+    "static/media/nav-icon5.svg": "/austin/static/media/nav-icon5.8504382903ac21ed27311d78825d4d2c.svg",
+    "static/media/nav-icon10.svg": "/austin/static/media/nav-icon10.0bf435cb471ce7088332173c2d1b5406.svg",
+    "static/media/nav-icon7.svg": "/austin/static/media/nav-icon7.60e18d179f96384df137400641023df8.svg",
+    "main.c6c6a840.css.map": "/austin/static/css/main.c6c6a840.css.map",
+    "main.1fa0e62c.js.map": "/austin/static/js/main.1fa0e62c.js.map",
     "453.ace21015.chunk.js.map": "/austin/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e51c6c07.css",
-    "static/js/main.47c50b1a.js"
+    "static/css/main.c6c6a840.css",
+    "static/js/main.1fa0e62c.js"
   ]
 }
