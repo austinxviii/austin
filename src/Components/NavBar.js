@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../Assets/img/retro/austinxviii-logo-white.png';
-import navIcon1 from '../Assets/img/nav-icon1.svg';
-import navIcon2 from '../Assets/img/nav-icon2.svg';
-import navIcon3 from '../Assets/img/nav-icon3.svg';
 
 
 export const NavBar = () => {
@@ -41,8 +38,9 @@ export const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">
             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-            <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Blogs</Nav.Link>
+            <Nav.Link href="#blogs" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Blogs</Nav.Link>
             <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+            <Nav.Link href="#tabs" className={activeLink === 'connect' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('connect')}>Tabs</Nav.Link>
         </Nav>
         </Navbar.Collapse>
     </Container>

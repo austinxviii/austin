@@ -97,13 +97,13 @@ const Timeline = () => {
   return (
     <TimelineWrapper>
       <TimelineComponent>
-        <TimelineDate right>August 30, 2017</TimelineDate>
+        <TimelineDate right>June 10, 2024</TimelineDate>
       </TimelineComponent>
       <TimelineMiddle>
         <TimelinePoint />
       </TimelineMiddle>
       <TimelineComponent bg>
-        <TimelineTitle>Published First Video</TimelineTitle>
+        <TimelineTitle>Continuous Random Variable</TimelineTitle>
         <TimelineParagraph>
           My first YouTube video was a tutorial on how to build a client-server sockets app in Java.
         </TimelineParagraph>
@@ -119,10 +119,10 @@ const Timeline = () => {
         <TimelinePoint />
       </TimelineMiddle>
       <TimelineComponent>
-        <TimelineDate>February 25, 2019</TimelineDate>
+        <TimelineDate>May 25, 2024</TimelineDate>
       </TimelineComponent>
       <TimelineComponent>
-        <TimelineDate right>June 3, 2020</TimelineDate>
+        <TimelineDate right>May 3, 2024</TimelineDate>
       </TimelineComponent>
       <TimelineMiddle>
         <TimelinePoint />
@@ -140,7 +140,7 @@ const Timeline = () => {
         <TimelinePoint bottom />
       </TimelineMiddle>
       <TimelineComponent>
-        <TimelineDate>June 28, 2021</TimelineDate>
+        <TimelineDate>April 28, 2024</TimelineDate>
       </TimelineComponent>
     </TimelineWrapper>
   );
