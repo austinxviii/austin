@@ -1,5 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import SpotifyEmbed from "./SpotifyEmbed";
 import colorSharp2 from "../Assets/img/color-sharp2.png"
 import projImg1 from "../Assets/img/retro/corridor.jpg";
 import projImg2 from "../Assets/img/retro/backrooms.jpg";
@@ -137,6 +138,9 @@ export const Projects = () =>{
                 </Tab.Container>
               </Col>
             </Row>
+            <div className="spotify">
+                <SpotifyEmbed />
+            </div>
           </Container>
           <img className="background-image-right" src={colorSharp2}></img>
         </section>

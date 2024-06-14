@@ -282,8 +282,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 300px 0;
-  background-image: url('./Assets/img/retro/marsAstronaut.jpg');
-  background-position: top center;
+  background-image: url('./Assets/img/retro/neuralink.avif');
+  background-position: bottom left;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -601,6 +601,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+.spotify{
+  margin-top: 100px;
+  margin-bottom: -160px;
+}
+
 
 @media screen and (max-width: 1100px) {
   .proj-imgbx {
@@ -646,11 +651,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /**********Contact Form CSS************/
 .contact {
   /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
-  padding: 60px 0 200px 0;
-  background-image: url('./Assets/img/retro/download\ \(3\).jpg');
+  padding: 120px 0 200px 0;
+  background-image: url('./Assets/img/retro/trippyStars.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  vertical-align: bottom;
+  border-style: none;
+  width: 100%;
+  height: auto;
+  /* max-width: 828px; */
 }
 .contact img {
   width: 92%;
@@ -673,10 +683,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 @media screen and (max-width: 600px) {
   .contact h2 {
-    margin-top: -25px;
+    margin-top: 25px;
     color: #080808;
   }
 }
+
 
 
 /************ Footer Css ************/
