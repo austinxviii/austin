@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/austin/static/css/main.ed5324a8.css",
-    "main.js": "/austin/static/js/main.9d538882.js",
+    "main.css": "/austin/static/css/main.53504961.css",
+    "main.js": "/austin/static/js/main.a87333da.js",
     "static/js/453.ace21015.chunk.js": "/austin/static/js/453.ace21015.chunk.js",
     "static/media/carinaNebula.png": "/austin/static/media/carinaNebula.8a836818b58a5ab0aa6a.png",
+    "static/media/nasa-design.jpg": "/austin/static/media/nasa-design.58ce3b45d6e1b689606d.jpg",
     "static/media/saturnRings.png": "/austin/static/media/saturnRings.6fbb5fa402c8a44e81ad.png",
     "static/media/color-sharp2.png": "/austin/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/trippyStars.jpg": "/austin/static/media/trippyStars.a021df49cd176e3bd631.jpg",
-    "static/media/neuralink.avif": "/austin/static/media/neuralink.c4c7596ed3bf75208378.avif",
+    "static/media/starlink.avif": "/austin/static/media/starlink.c4c7596ed3bf75208378.avif",
     "static/media/books.jpg": "/austin/static/media/books.e3ac030cb9161583c0ff.jpg",
     "static/media/spaceship3.jpg": "/austin/static/media/spaceship3.2bcc62cda23517779511.jpg",
     "static/media/design-bubble.jpg": "/austin/static/media/design-bubble.1944af53e3a7d3e8a2a8.jpg",
@@ -18,8 +19,8 @@
     "static/media/helixNebula.jpg": "/austin/static/media/helixNebula.b1da9ae5097021776efd.jpg",
     "static/media/hubble.jpg": "/austin/static/media/hubble.a9e565ad7e001c3b1df3.jpg",
     "static/media/teslaInSpace.jpeg": "/austin/static/media/teslaInSpace.cfbacc929333634d7c6a.jpeg",
-    "static/media/sr17.jpg": "/austin/static/media/sr17.915ebc8d49c87dd49b01.jpg",
-    "static/media/concorde-and-eclipse.jpg": "/austin/static/media/concorde-and-eclipse.ce0a0342558b222b1d0c.jpg",
+    "static/media/endurance.jpeg": "/austin/static/media/endurance.6a213746524e407544a6.jpeg",
+    "static/media/concorde-and-eclipse.jpg": "/austin/static/media/concorde-and-eclipse.c319fd0a59ef037b4a77.jpg",
     "static/media/backrooms.jpg": "/austin/static/media/backrooms.4cdbfa2731114ebffba7.jpg",
     "static/media/bb1.jpg": "/austin/static/media/bb1.72a1da75550328f23e77.jpg",
     "static/media/paleBlueDotHD.jpg": "/austin/static/media/paleBlueDotHD.99d0335b0430d9b90887.jpg",
@@ -39,12 +40,12 @@
     "static/media/nav-icon5.svg": "/austin/static/media/nav-icon5.8504382903ac21ed27311d78825d4d2c.svg",
     "static/media/nav-icon10.svg": "/austin/static/media/nav-icon10.0bf435cb471ce7088332173c2d1b5406.svg",
     "static/media/nav-icon7.svg": "/austin/static/media/nav-icon7.60e18d179f96384df137400641023df8.svg",
-    "main.ed5324a8.css.map": "/austin/static/css/main.ed5324a8.css.map",
-    "main.9d538882.js.map": "/austin/static/js/main.9d538882.js.map",
+    "main.53504961.css.map": "/austin/static/css/main.53504961.css.map",
+    "main.a87333da.js.map": "/austin/static/js/main.a87333da.js.map",
     "453.ace21015.chunk.js.map": "/austin/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed5324a8.css",
-    "static/js/main.9d538882.js"
+    "static/css/main.53504961.css",
+    "static/js/main.a87333da.js"
   ]
 }
