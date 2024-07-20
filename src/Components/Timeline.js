@@ -98,6 +98,21 @@ const TimelineParagraph = styled.p`
 const Timeline = () => {
   return (
     <TimelineWrapper>
+      <TimelineComponent bg>
+        <TimelineTitle>Scheduling</TimelineTitle>
+        <TimelineParagraph>
+          <ul>
+            <li>Scheduling Algorithms</li>
+            <li>Statistics(Maximum Likelihood Estimator)</li>
+          </ul>
+        </TimelineParagraph>
+      </TimelineComponent>
+      <TimelineMiddle>
+        <TimelinePoint />
+      </TimelineMiddle>
+      <TimelineComponent>
+        <TimelineDate>July 20, 2024</TimelineDate>
+      </TimelineComponent>
       <TimelineComponent>
         <TimelineDate right>July 19, 2024</TimelineDate>
       </TimelineComponent>
@@ -138,15 +153,15 @@ const Timeline = () => {
         <TimelineTitle>Processes</TimelineTitle>
         <TimelineParagraph>
         <ul>
-            <li>Read about processes and how thry function</li>
-            <li>Practiced some calculus problems</li>
+            <li>Read about processes and how they function</li>
+            <li>Ran through some calculus problems</li>
             <li>CSES Problemset</li>
           </ul>
         </TimelineParagraph>
       </TimelineComponent>
       <TimelineComponent bg>
-        <TimelineTitle>Finished making this website</TimelineTitle>
-        <TimelineParagraph>Pushed the code to GitHub</TimelineParagraph>
+        <TimelineTitle>Wrapping up the website</TimelineTitle>
+        <TimelineParagraph>Deployed on GitHub Pages</TimelineParagraph>
       </TimelineComponent>
       <TimelineMiddle>
         <TimelinePoint />
