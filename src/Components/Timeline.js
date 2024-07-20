@@ -17,7 +17,7 @@ const TimelineWrapper = styled.div`
   
 
   &::-webkit-scrollbar {
-    width: 7px;
+    width: 5px;
   }
 
   &::-webkit-scrollbar-track {
@@ -31,7 +31,7 @@ const TimelineWrapper = styled.div`
   }
 
    @media (max-width: 1100px) {
-    margin: 30px 30px 0 30px;
+    margin: 30px 15px 0 15px;
     height: 450px;
   }
 `;
@@ -44,7 +44,8 @@ const TimelineComponent = styled.div`
   border-radius: ${({ bg }) => (bg ? '10px' : '0')};
 
   @media (max-width: 1100px) {
-    padding: 10px 10px 10px 10px;
+    // padding: 10px 10px 10px 10px;
+    padding: ${({ bg }) => (bg ? '0' : '0')};
   }
 `;
 
@@ -69,7 +70,7 @@ const TimelineDate = styled.div`
   text-align: ${({ right }) => (right ? 'right' : 'left')};
 
   @media (max-width: 1100px) {
-    margin: -15px;
+    margin: -5px;
   }
 `;
 
@@ -80,15 +81,16 @@ const TimelineTitle = styled.h3`
   font-weight: bold;
 
   @media (max-width: 1100px) {
-    font-size: 15px;
+    font-size: 12px;
+    margin: 8px;
   }
 `;
 
 const TimelineParagraph = styled.p`
   text-align: ${({ right }) => (right ? 'right' : 'left')};
   line-height: 1;
-  margin-left: 0;
-  align-content: left;
+  margin-left: -10px;
+  margin-right: 3px;
   
   @media (max-width: 1100px) {
     font-size: 11px;
@@ -161,7 +163,11 @@ const Timeline = () => {
       </TimelineComponent>
       <TimelineComponent bg>
         <TimelineTitle>Wrapping up the website</TimelineTitle>
-        <TimelineParagraph>Deployed on GitHub Pages</TimelineParagraph>
+        <TimelineParagraph>
+          <ul>
+            <li>Deployed on GitHub Pages</li>
+          </ul>
+        </TimelineParagraph>
       </TimelineComponent>
       <TimelineMiddle>
         <TimelinePoint />

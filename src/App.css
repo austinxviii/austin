@@ -753,7 +753,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     color: #121212;
     padding: 5px 25px 20px 25px;
     margin-bottom: 80px;
-    margin-top: -80px;
+    margin-top: -100px;
   }
   .newsletter-bx h3 {
     font-weight: 700;
