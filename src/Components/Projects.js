@@ -57,31 +57,31 @@ export const Projects = () =>{
             title: "Music/HipHop",
             description: "",
             imgUrl: projImg7,
-            projectUrl: "#"
+            projectUrl: "https://glorious-nasturtium-6dc.notion.site/MUSIC-0273fbcdc3f74b9898e43269de833dec?pvs=4"
         },
         {
             title: "Football",
             description: "",
             imgUrl: projImg8,
-            projectUrl: "#"
+            projectUrl: "https://glorious-nasturtium-6dc.notion.site/FOOTBALL-e5fe639df7354e15a1700503ca6263e5?pvs=4"
         },
         {
-            title: "Art & Photography",
+            title: "Photography & Art",
             description: "",
             imgUrl: projImg9,
-            projectUrl: "#"
+            projectUrl: "https://glorious-nasturtium-6dc.notion.site/PHOTOGRAPHY-ART-88826ec38be34aa79cc40fdb240f62dd?pvs=4"
         },
         {
             title: "Movies & Series",
             description: "",
             imgUrl: projImg10,
-            projectUrl: "#"
+            projectUrl: "https://glorious-nasturtium-6dc.notion.site/MOVIES-SERIES-63ac85eca7ff464fb6ac32e86b23a01a"
         },
         {
             title: "Books",
             description: "",
             imgUrl: projImg11,
-            projectUrl: "#"
+            projectUrl: "https://glorious-nasturtium-6dc.notion.site/BOOKS-9af5d0df85bb4ae2b442471af49e490e?pvs=4"
         },
     ];
 
