@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/austin/static/css/main.53504961.css",
-    "main.js": "/austin/static/js/main.a87333da.js",
+    "main.css": "/austin/static/css/main.afce3efa.css",
+    "main.js": "/austin/static/js/main.7b0627f8.js",
     "static/js/453.ace21015.chunk.js": "/austin/static/js/453.ace21015.chunk.js",
     "static/media/carinaNebula.png": "/austin/static/media/carinaNebula.8a836818b58a5ab0aa6a.png",
     "static/media/nasa-design.jpg": "/austin/static/media/nasa-design.58ce3b45d6e1b689606d.jpg",
@@ -40,12 +40,12 @@
     "static/media/nav-icon5.svg": "/austin/static/media/nav-icon5.8504382903ac21ed27311d78825d4d2c.svg",
     "static/media/nav-icon10.svg": "/austin/static/media/nav-icon10.0bf435cb471ce7088332173c2d1b5406.svg",
     "static/media/nav-icon7.svg": "/austin/static/media/nav-icon7.60e18d179f96384df137400641023df8.svg",
-    "main.53504961.css.map": "/austin/static/css/main.53504961.css.map",
-    "main.a87333da.js.map": "/austin/static/js/main.a87333da.js.map",
+    "main.afce3efa.css.map": "/austin/static/css/main.afce3efa.css.map",
+    "main.7b0627f8.js.map": "/austin/static/js/main.7b0627f8.js.map",
     "453.ace21015.chunk.js.map": "/austin/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.53504961.css",
-    "static/js/main.a87333da.js"
+    "static/css/main.afce3efa.css",
+    "static/js/main.7b0627f8.js"
   ]
 }
