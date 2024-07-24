@@ -13,7 +13,7 @@ import projImg8 from "../Assets/img/retro/messi2.jpg";
 import projImg9 from "../Assets/img/retro/design-bubble.jpg";
 import projImg10 from "../Assets/img/retro/bb1.jpg";
 import projImg11 from "../Assets/img/retro/books.jpg";
-
+import projImg12 from "../Assets/img/retro/galaxy4.jpg";
 
 export const Projects = () =>{
 
@@ -31,7 +31,7 @@ export const Projects = () =>{
             projectUrl: "https://glorious-nasturtium-6dc.notion.site/GALACTIC-0acfddbdaf344a0a9c055e6cf73ec6f4"
         },
         {
-            title: "Semantic Segmentation of Satellite Imagery",
+            title: "Classification of Satellite Images",
             description: "Deep Learning",
             imgUrl: projImg3,
             projectUrl: "https://glorious-nasturtium-6dc.notion.site/SEMANTIC-SEGMENTATION-OF-SATELLITE-IMAGES-d459f0fa5de54d39bc27913a2b1780dc?pvs=4"
@@ -51,6 +51,14 @@ export const Projects = () =>{
             description: "....",
             imgUrl: projImg6,
         },
+    ];
+    const projects2 = [
+        {
+            title: "Semantic Segmentation of Satellite Imagery",
+            description: "Deep Learning",
+            imgUrl: projImg12,
+            projectUrl: "https://glorious-nasturtium-6dc.notion.site/SEMANTIC-SEGMENTATION-OF-SATELLITE-IMAGERY-b258d01d149e46c0a307a452e521ac85?pvs=4"
+        }
     ];
     const projects3 = [
         {
@@ -118,7 +126,18 @@ export const Projects = () =>{
                             </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
-                            <p>Coming soon....</p>
+                            <Row className="justify-content-center">
+                            {
+                                projects2.map((project, index) => {
+                                return (
+                                    <ProjectCard
+                                    key={index}
+                                    {...project}
+                                    />
+                                )
+                                })
+                            }
+                            </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
                             <Row className="justify-content-center">

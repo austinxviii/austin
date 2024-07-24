@@ -100,6 +100,22 @@ const TimelineParagraph = styled.p`
 const Timeline = () => {
   return (
     <TimelineWrapper>
+    <TimelineComponent>
+        <TimelineDate right>July 24, 2024</TimelineDate>
+      </TimelineComponent>
+      <TimelineMiddle>
+        <TimelinePoint />
+      </TimelineMiddle>
+      <TimelineComponent bg>
+        <TimelineTitle>Divide-and-Conquer</TimelineTitle>
+        <TimelineParagraph>
+          <ul>
+            <li>Recursive Matrix Multiplication</li>
+            <li>Classical IPC Problems</li>
+            <li>CSES Problemset</li>
+          </ul>
+        </TimelineParagraph>
+      </TimelineComponent>
       <TimelineComponent bg>
         <TimelineTitle>Scheduling</TimelineTitle>
         <TimelineParagraph>
