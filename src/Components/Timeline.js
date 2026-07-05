@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import timelineData from '../data/timelineData.json';
 
 const TimelineWrapper = styled.div`
   margin: -80px 100px 0 -100px;
@@ -100,98 +101,46 @@ const TimelineParagraph = styled.p`
 const Timeline = () => {
   return (
     <TimelineWrapper>
-    <TimelineComponent>
-        <TimelineDate right>July 24, 2024</TimelineDate>
-      </TimelineComponent>
+      {timelineData.map((dayEntry, dayIndex) => (
+        <React.Fragment key={dayIndex}>
+          {/* Date on left or right */}
+          <TimelineComponent>
+            <TimelineDate right={dayEntry.align === 'right'}>
+              {dayEntry.date}
+            </TimelineDate>
+          </TimelineComponent>
+
+          {/* Middle line with point */}
+          <TimelineMiddle>
+            <TimelinePoint />
+          </TimelineMiddle>
+
+          {/* Entries for this date */}
+          {dayEntry.entries.length > 0 ? (
+            dayEntry.entries.map((entry, entryIndex) => (
+              <TimelineComponent key={entryIndex} bg>
+                <TimelineTitle>{entry.title}</TimelineTitle>
+                <TimelineParagraph>
+                  <ul>
+                    {entry.items.map((item, itemIndex) => (
+                      <li key={itemIndex}>{item}</li>
+                    ))}
+                  </ul>
+                </TimelineParagraph>
+              </TimelineComponent>
+            ))
+          ) : (
+            <TimelineComponent>
+              <TimelineParagraph>No entries for this date</TimelineParagraph>
+            </TimelineComponent>
+          )}
+        </React.Fragment>
+      ))}
+
+      {/* End point */}
       <TimelineMiddle>
-        <TimelinePoint />
-      </TimelineMiddle>
-      <TimelineComponent bg>
-        <TimelineTitle>Divide-and-Conquer</TimelineTitle>
-        <TimelineParagraph>
-          <ul>
-            <li>Recursive Matrix Multiplication</li>
-            <li>Classical IPC Problems</li>
-            <li>CSES Problemset</li>
-          </ul>
-        </TimelineParagraph>
-      </TimelineComponent>
-      <TimelineComponent bg>
-        <TimelineTitle>Scheduling</TimelineTitle>
-        <TimelineParagraph>
-          <ul>
-            <li>Scheduling Algorithms</li>
-            <li>Statistics(Maximum Likelihood Estimator)</li>
-          </ul>
-        </TimelineParagraph>
-      </TimelineComponent>
-      <TimelineMiddle>
-        <TimelinePoint />
-      </TimelineMiddle>
-      <TimelineComponent>
-        <TimelineDate>July 20, 2024</TimelineDate>
-      </TimelineComponent>
-      <TimelineComponent>
-        <TimelineDate right>July 19, 2024</TimelineDate>
-      </TimelineComponent>
-      <TimelineMiddle>
-        <TimelinePoint />
-      </TimelineMiddle>
-      <TimelineComponent bg>
-        <TimelineTitle>Interprocess Communication</TimelineTitle>
-        <TimelineParagraph>
-          <ul>
-            <li>How process communicate in a system</li>
-            <li>And some Leetcode</li>
-          </ul>
-        </TimelineParagraph>
-      </TimelineComponent>
-      <TimelineComponent bg>
-        <TimelineTitle>Threads</TimelineTitle>
-        <TimelineParagraph>
-          <ul>
-            <li>Finished reading about threads</li>
-            <li>Div2 Codeforces contest</li>
-          </ul>
-        </TimelineParagraph>
-      </TimelineComponent>
-      <TimelineMiddle>
-        <TimelinePoint />
-      </TimelineMiddle>
-      <TimelineComponent>
-        <TimelineDate>July 18, 2024</TimelineDate>
-      </TimelineComponent>
-      <TimelineComponent>
-        <TimelineDate right>July 16, 2024</TimelineDate>
-      </TimelineComponent>
-      <TimelineMiddle>
-        <TimelinePoint />
-      </TimelineMiddle>
-      <TimelineComponent bg>
-        <TimelineTitle>Processes</TimelineTitle>
-        <TimelineParagraph>
-        <ul>
-            <li>Read about processes and how they function</li>
-            <li>Ran through some calculus problems</li>
-            <li>CSES Problemset</li>
-          </ul>
-        </TimelineParagraph>
-      </TimelineComponent>
-      <TimelineComponent bg>
-        <TimelineTitle>Wrapping up the website</TimelineTitle>
-        <TimelineParagraph>
-          <ul>
-            <li>Deployed on GitHub Pages</li>
-          </ul>
-        </TimelineParagraph>
-      </TimelineComponent>
-      <TimelineMiddle>
-        <TimelinePoint />
         <TimelinePoint bottom />
       </TimelineMiddle>
-      <TimelineComponent>
-        <TimelineDate>June 16, 2024</TimelineDate>
-      </TimelineComponent>
     </TimelineWrapper>
   );
 };
