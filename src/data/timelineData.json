@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "date": "2026-07-05",
+    "align": "right",
+    "entries": [
+      {
+        "title": "Divide and Conquer",
+        "items": [
+          "Recursion"
+        ]
+      }
+    ]
+  }
+]
