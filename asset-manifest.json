@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/austin/static/css/main.750a9cbe.css",
-    "main.js": "/austin/static/js/main.12b76a2e.js",
+    "main.js": "/austin/static/js/main.442f096f.js",
     "static/js/453.ace21015.chunk.js": "/austin/static/js/453.ace21015.chunk.js",
     "static/media/carinaNebula.png": "/austin/static/media/carinaNebula.8a836818b58a5ab0aa6a.png",
     "static/media/nasa-design.jpg": "/austin/static/media/nasa-design.58ce3b45d6e1b689606d.jpg",
@@ -12,7 +12,7 @@
     "static/media/books.jpg": "/austin/static/media/books.e3ac030cb9161583c0ff.jpg",
     "static/media/spaceship3.jpg": "/austin/static/media/spaceship3.2bcc62cda23517779511.jpg",
     "static/media/design-bubble.jpg": "/austin/static/media/design-bubble.1944af53e3a7d3e8a2a8.jpg",
-    "static/media/header-img.svg": "/austin/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
+    "static/media/header-img.svg": "/austin/static/media/header-img.400baa4260daac98f2b2b1ccf08761c2.svg",
     "static/media/messi2.jpg": "/austin/static/media/messi2.5afe8227e029ef706a39.jpg",
     "static/media/a$ap.jpg": "/austin/static/media/a$ap.ff08760163dbf87b83e1.jpg",
     "static/media/corridor.jpg": "/austin/static/media/corridor.8cc00bdf9a514d5e82d5.jpg",
@@ -42,11 +42,11 @@
     "static/media/nav-icon10.svg": "/austin/static/media/nav-icon10.0bf435cb471ce7088332173c2d1b5406.svg",
     "static/media/nav-icon7.svg": "/austin/static/media/nav-icon7.60e18d179f96384df137400641023df8.svg",
     "main.750a9cbe.css.map": "/austin/static/css/main.750a9cbe.css.map",
-    "main.12b76a2e.js.map": "/austin/static/js/main.12b76a2e.js.map",
+    "main.442f096f.js.map": "/austin/static/js/main.442f096f.js.map",
     "453.ace21015.chunk.js.map": "/austin/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.750a9cbe.css",
-    "static/js/main.12b76a2e.js"
+    "static/js/main.442f096f.js"
   ]
 }
