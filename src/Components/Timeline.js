@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import timelineData from '../data/timelineData.json';
 
@@ -101,41 +101,47 @@ const TimelineParagraph = styled.p`
 const Timeline = () => {
   return (
     <TimelineWrapper>
-      {timelineData.map((dayEntry, dayIndex) => (
-        <React.Fragment key={dayIndex}>
-          {/* Date on left or right */}
-          <TimelineComponent>
-            <TimelineDate right={dayEntry.align === 'right'}>
-              {dayEntry.date}
-            </TimelineDate>
-          </TimelineComponent>
-
-          {/* Middle line with point */}
-          <TimelineMiddle>
-            <TimelinePoint />
-          </TimelineMiddle>
-
-          {/* Entries for this date */}
-          {dayEntry.entries.length > 0 ? (
-            dayEntry.entries.map((entry, entryIndex) => (
-              <TimelineComponent key={entryIndex} bg>
-                <TimelineTitle>{entry.title}</TimelineTitle>
-                <TimelineParagraph>
-                  <ul>
-                    {entry.items.map((item, itemIndex) => (
-                      <li key={itemIndex}>{item}</li>
-                    ))}
-                  </ul>
-                </TimelineParagraph>
-              </TimelineComponent>
-            ))
-          ) : (
+      {timelineData && timelineData.length > 0 ? (
+        timelineData.map((dayEntry, dayIndex) => (
+          <React.Fragment key={dayIndex}>
+            {/* Date on left or right */}
             <TimelineComponent>
-              <TimelineParagraph>No entries for this date</TimelineParagraph>
+              <TimelineDate right={dayEntry.align === 'right'}>
+                {dayEntry.date}
+              </TimelineDate>
             </TimelineComponent>
-          )}
-        </React.Fragment>
-      ))}
+
+            {/* Middle line with point */}
+            <TimelineMiddle>
+              <TimelinePoint />
+            </TimelineMiddle>
+
+            {/* Entries for this date */}
+            {dayEntry.entries && dayEntry.entries.length > 0 ? (
+              dayEntry.entries.map((entry, entryIndex) => (
+                <TimelineComponent key={entryIndex} bg>
+                  <TimelineTitle>{entry.title}</TimelineTitle>
+                  <TimelineParagraph>
+                    <ul>
+                      {entry.items && entry.items.map((item, itemIndex) => (
+                        <li key={itemIndex}>{item}</li>
+                      ))}
+                    </ul>
+                  </TimelineParagraph>
+                </TimelineComponent>
+              ))
+            ) : (
+              <TimelineComponent>
+                <TimelineParagraph>No entries for this date</TimelineParagraph>
+              </TimelineComponent>
+            )}
+          </React.Fragment>
+        ))
+      ) : (
+        <TimelineComponent>
+          <TimelineParagraph>No timeline data available</TimelineParagraph>
+        </TimelineComponent>
+      )}
 
       {/* End point */}
       <TimelineMiddle>
