@@ -21,11 +21,25 @@ jobs:
       - name: Install dependencies
         run: npm install axios
       
+      - name: Debug - Check Secrets
+        run: |
+          echo "NOTION_TOKEN exists: $([[ -z '${{ secrets.NOTION_TOKEN }}' ]] && echo 'NO' || echo 'YES')"
+          echo "NOTION_DATABASE_ID exists: $([[ -z '${{ secrets.NOTION_DATABASE_ID }}' ]] && echo 'NO' || echo 'YES')"
+          echo "DATABASE_ID value: ${{ secrets.NOTION_DATABASE_ID }}"
+      
       - name: Sync Notion to Timeline
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
         run: node scripts/sync-notion.js
+      
+      - name: Debug - Check Generated File
+        run: |
+          echo "=== Generated timelineData.json ==="
+          cat src/data/timelineData.json
+          echo ""
+          echo "=== File size ==="
+          ls -lh src/data/timelineData.json
       
       - name: Commit changes
         env:
@@ -34,5 +48,6 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "Notion Sync Bot"
           git add src/data/timelineData.json
+          git status
           git diff-index --quiet HEAD || git commit -m "📝 Sync: Update timeline from Notion"
           git push https://x-access-token:${GITHUB_TOKEN}@github.com/austinxviii/austin.git HEAD:main
