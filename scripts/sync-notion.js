@@ -17,6 +17,7 @@ const notionClient = axios.create({
 
 async function getNotionDatabase() {
   try {
+    console.log('📡 Fetching Notion database...');
     const response = await notionClient.post(`/databases/${DATABASE_ID}/query`, {
       sorts: [
         {
@@ -26,9 +27,13 @@ async function getNotionDatabase() {
       ]
     });
 
+    console.log(`✅ Found ${response.data.results.length} entries in Notion`);
     return response.data.results;
   } catch (error) {
-    console.error('Error fetching Notion database:', error.message);
+    console.error('❌ Error fetching Notion database:', error.message);
+    if (error.response?.data) {
+      console.error('Response:', error.response.data);
+    }
     process.exit(1);
   }
 }
@@ -51,53 +56,52 @@ function parseNotionPage(page) {
 }
 
 async function updateTimelineData(entries) {
-  // Load existing timeline data or create new
-  let timelineData = [];
+  console.log(`📥 Processing ${entries.length} entries from Notion...`);
   
-  if (fs.existsSync(DATA_FILE)) {
-    const content = fs.readFileSync(DATA_FILE, 'utf-8');
-    timelineData = JSON.parse(content);
-  }
-
-  // Process each Notion entry
-  entries.forEach(entry => {
+  // Create fresh timeline data from Notion (REPLACE, don't merge)
+  const timelineDataMap = {};
+  
+  entries.forEach((entry, index) => {
     const parsed = parseNotionPage(entry);
     
-    // Check if date already exists
-    let dateEntry = timelineData.find(d => d.date === parsed.date);
-    
-    if (!dateEntry) {
-      dateEntry = {
+    // Group by date
+    if (!timelineDataMap[parsed.date]) {
+      timelineDataMap[parsed.date] = {
         date: parsed.date,
-        align: timelineData.length % 2 === 0 ? 'right' : 'left',
+        align: index % 2 === 0 ? 'right' : 'left',
         entries: []
       };
-      timelineData.push(dateEntry);
     }
-
-    // Check if title already exists for this date
-    if (!dateEntry.entries.find(e => e.title === parsed.title)) {
-      dateEntry.entries.push({
-        title: parsed.title,
-        items: parsed.items
-      });
-    }
+    
+    // Add entry (don't worry about duplicates, Notion is source of truth)
+    timelineDataMap[parsed.date].entries.push({
+      title: parsed.title,
+      items: parsed.items
+    });
   });
-
-  // Sort by date descending
-  timelineData.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-  // Write updated data
+  
+  // Convert to array and sort by date descending
+  const timelineData = Object.values(timelineDataMap).sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  );
+  
+  // Reindex align property based on final order
+  timelineData.forEach((item, index) => {
+    item.align = index % 2 === 0 ? 'right' : 'left';
+  });
+  
+  // Write updated data (completely replaces old file)
   fs.writeFileSync(DATA_FILE, JSON.stringify(timelineData, null, 2));
-  console.log('✅ Timeline updated successfully!');
+  console.log(`✅ Timeline updated successfully with ${timelineData.length} dates!`);
+  console.log(`📊 Total entries: ${timelineData.reduce((sum, day) => sum + day.entries.length, 0)}`);
 }
 
 async function main() {
-  console.log('🔄 Syncing Notion database to timeline...');
+  console.log('🔄 Syncing Notion database to timeline...\n');
   const pages = await getNotionDatabase();
   
   if (pages.length === 0) {
-    console.log('No entries found in Notion database');
+    console.log('⚠️  No entries found in Notion database');
     return;
   }
 
