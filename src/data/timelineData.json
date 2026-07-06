@@ -1,6 +1,32 @@
 [
   {
-    "date": "2026-07-05",
+    "date": "2026-07-06",
+    "align": "right",
+    "entries": [
+      {
+        "title": "Machine Learning",
+        "items": [
+          "Linear Regression",
+          "Gradient Descent"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-07-04",
+    "align": "left",
+    "entries": [
+      {
+        "title": "Recursion and Backtracking",
+        "items": [
+          "N-Queens Problem",
+          "Sudoku Solver"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-07-03",
     "align": "right",
     "entries": [
       {
