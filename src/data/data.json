@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "category": "🚀 Building",
+    "title": "AI SaaS MVP",
+    "description": "Building an AI-powered SaaS application.",
+    "type": "progress",
+    "progress": 65,
+    "status": "In Progress"
+  },
+  {
+    "id": 2,
+    "category": "📚 Learning",
+    "title": "GATE CS 2027",
+    "description": "Preparing Operating Systems and DBMS.",
+    "type": "progress",
+    "progress": 40,
+    "status": "In Progress"
+  },
+  {
+    "id": 3,
+    "category": "💻 Coding",
+    "title": "LeetCode",
+    "type": "counter",
+    "current": 82,
+    "target": 200,
+    "status": "In Progress"
+  },
+  {
+    "id": 4,
+    "category": "🌐 Portfolio",
+    "title": "Portfolio Website",
+    "type": "completed",
+    "status": "Completed"
+  },
+  {
+    "id": 5,
+    "category": "🏋 Personal",
+    "title": "Workout Streak",
+    "type": "streak",
+    "days": 15,
+    "status": "Active"
+  }
+]

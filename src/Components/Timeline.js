@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import CurrentFocus from "./Components/CurrentFocus/CurrentFocus";
 
 const TimelineWrapper = styled.div`
   margin: -80px 100px 0 -100px;
